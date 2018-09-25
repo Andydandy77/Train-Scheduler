@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Train Schedule</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    
+
+  </head>
+
+
+  <body>
+    <div class="jumbotron jumbotron-fluid bg-dark text-primary">
+    <div class="container">
+        <h1 class="display-3">Train Scheduler</h1>
+        <p class="lead">Add a train and we'll tell you when it comes next!</p>
+    </div>
+    </div>
+    <div class = "container">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="row">
+            </tbody>
+        </table>
+
+    
+        <form>
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1">Train Name</label>
+                <input type="name" class="form-control" id="name" aria-describedby="Train Name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Destination</label>
+                <input type="destination" class="form-control" id="destination" placeholder="Enter destination">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">First Train Time (HH:mm - millitary time )</label>
+                <input type="text" class="form-control" id="time" placeholder="Enter time" >
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Frequency (min)</label>
+                <input type="frequency" class="form-control" id="freq" placeholder="Frequency">
+            </div>
+                
+            <div class="form-check">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        </form>
+    </div>
+    
+  </body>
+</html>
