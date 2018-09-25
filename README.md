@@ -10,5 +10,5 @@ This page implements moment.js to store the current time, store the times of tra
 
 If you'd like to the leave the page and come back later, don't worry! We save the information in a database via firebase so that you'll never have to worry about losing your itinerary.
 
-## Languages and Libraries used
+## Languages and Libraries Used
 HTML, CSS, Javascript, JQUERY, Firebase, Moment.js
